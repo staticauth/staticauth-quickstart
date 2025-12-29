@@ -1,0 +1,35 @@
+---
+locale: 'en'
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "_"
+backend:
+  # See https://www.netlifycms.org/docs/authentication-backends/#github-backend
+  name: github
+  repo: staticauth/quickstart
+  branch: main
+  base_url: https://auth.static.dcycle.com
+  auth_endpoint: auth/github/alberto56
+media_folder: 'docs/media'
+public_folder: "/media"
+collections:
+  - name: 'blog'
+    create: true
+    label: 'Blog posts'
+    folder: 'docs/blog/_posts/'
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Author', name: 'author', widget: 'string', required: false }
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'page' }
+      - { label: 'Content', name: 'body', widget: 'markdown' }
+  - name: 'blocks'
+    create: true
+    label: 'Front Page Blocks'
+    folder: 'docs/blocks/_posts/'
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Content', name: 'body', widget: 'markdown' }
+      - { label: 'Image', name: 'image', widget: 'image' }

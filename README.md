@@ -4,6 +4,6 @@ The code comes from https://github.com/StartBootstrap/startbootstrap-one-page-wo
 
 For local development you can
 
-* Install Docker
+* Install and enable Docker
 * Run docker compose up
 * Visit http://0.0.0.0:4249

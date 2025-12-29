@@ -1,0 +1,10 @@
+blocks:
+  - title: 'For those about to rock...'
+    body: 'We salute you! Explore our collection of rock music articles and reviews.'
+    image: '/media/01.jpg'
+  - title: 'Jazz it up!'
+    body: 'Dive into the world of jazz with our insightful articles and artist spotlights.'
+    image: '/media/02.jpg'
+  - title: 'Classical vibes'
+    body: 'Experience the timeless beauty of classical music through our curated content.'
+    image: '/media/03.jpg'
