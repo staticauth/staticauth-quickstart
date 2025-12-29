@@ -2,7 +2,7 @@
 layout: page
 title: Our site is launching
 ---
-# 🎉 We’re Live! Launching Our New Website
+## 🎉 We’re Live! Launching Our New Website
 
 We’re thrilled to announce the official launch of our new website — a major step forward in how we connect, share, and grow. After months of planning, design, and development, our site is now online and ready to explore!
 
