@@ -1,6 +1,5 @@
 ---
 ---
-{% include calculate_root.html %}
 <!DOCTYPE html>
 <html lang="en">
     {% include head.html %}
@@ -31,7 +30,7 @@
                 <div class="container px-5">
                     <div class="row gx-5 align-items-center">
                         <div class="col-lg-6{% if put_image_last %} order-lg-2{% endif %}">
-                            <div class="p-5"><img class="img-fluid rounded-circle" src="{{ root }}{{ block.image }}" alt="..." /></div>
+                            <div class="p-5"><img class="img-fluid rounded-circle" src="{{ block.image | replace: '/media', 'media' }}" alt="..." /></div>
                         </div>
                         <div class="col-lg-6{% if put_image_last %} order-lg-1{% endif %}">
                             <div class="p-5">
