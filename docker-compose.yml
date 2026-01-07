@@ -5,4 +5,10 @@ services:
     ports:
       - 4249:4000
     volumes:
-      - .:/srv/jekyll
+      - ./docs:/srv/jekyll
+  httpd:
+    image: httpd:2.4
+    ports:
+      - 4250:80
+    volumes:
+      - ./docs/_site:/usr/local/apache2/htdocs/staticauth-quickstart

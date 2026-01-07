@@ -1,0 +1,9 @@
+{% comment %}
+  Allows us to host this on top-level domains, or in subdirectories.
+{% endcomment %}
+{% assign path_size = page.url | split: "/" | size %}
+{% assign depth = path_size | minus: 2 %}
+{% assign root = "" %}
+{% for i in (1..depth) %}
+    {% assign root = root | append: "../" %}
+{% endfor %}

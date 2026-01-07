@@ -22,7 +22,7 @@
                             {% for blog in site.categories.blog %}
                             <h2 class="display-4">{{ blog.title }}</h2>
                             <p>{{ blog.content | strip_html | truncate: 100 }}</p>
-                            <p><a href="{{ blog.url }}">Read More</a></p>
+                            <p><a href="{{ blog.url | replace: '/blog', 'blog' }}">Read More</a></p>
                             <hr/>
                             {% endfor %}
                         </div>
